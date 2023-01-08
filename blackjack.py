@@ -15,7 +15,7 @@ def play():
     
     cards = init_cards()
     
-    #define two empyty list to store the user and dealer's cards
+    #define two empyty list to store the player and dealer's cards
     user_cards = []
     computer_cards = []
 
@@ -55,7 +55,7 @@ def play():
     '''
     while computer_score != 21 and computer_score < 17:
         computer_cards.append(random_cards(cards))
-        # print(f"Dealers cards are: {computer_cards[:-1]}")
+        # print(f"The dealers cards are: {computer_cards[:-1]}")
         computer_score = calculate_score(computer_cards)
 
     print(f"Your final hand: {user_cards}, final socre: {user_score}")
