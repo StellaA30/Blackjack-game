@@ -38,8 +38,8 @@ In this function, we also check for a blackjack and an ace.
 If an ace (11) exists in the list of cards and the total score is over 21, then replace its value of 11 with 1.'''
 
 def calculate_score(card_list):
-    # if 10 in card_list and 11 in card_list and len(card_list) == 2:
-    #checking for a blackjack (ace +10)
+    # if 10 in card_list and 11 in card_list and len(card_list) == 2 , then blackjack with ace+10
+    #checking for a blackjack 
     if len(card_list)==2 and sum(card_list)==21:
         return 21 
     #check for an ace (11) and replace with 1 if score is over 21
