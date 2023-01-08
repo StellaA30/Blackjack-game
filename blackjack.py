@@ -34,7 +34,7 @@ def play():
         user_score = calculate_score(user_cards)
         computer_score = calculate_score(computer_cards)
         print(f'Your cards are: {user_cards} and current score is: {user_score}')
-        print(f"The computer's first card is: {computer_cards[0]}")
+        print(f"The dealer's first card is: {computer_cards[0]}")
         
 
         #the game ends if the dealer or the player has a blackjack (value 0) or if the player's score is over 21. 
