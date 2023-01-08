@@ -2,7 +2,7 @@
 
 This project models a single iteration of a game of Blackjack between the dealer and a single player.
 
-## Assumptions about the game
+## Assumptions made for the game solution
 1) The soultion model a single deck of 52 cards
 2) The Jack/Queen/King all count as 10 in the deck of cards created (see deck.py)
 3) The ace is initially set to 11 and if the score is already over 21, then the ace value changes to 1
