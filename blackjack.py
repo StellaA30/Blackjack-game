@@ -15,7 +15,7 @@ def play():
     
     cards = init_cards()
     
-    #define two empyty list to store the player and dealer's cards
+    #define two empyty lists to store the player and dealer's cards
     user_cards = []
     computer_cards = []
 
