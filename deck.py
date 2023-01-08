@@ -67,7 +67,7 @@ def compare_scores(computer_score, user_score):
     elif computer_score > 21:
         return " Dealer went over, you win!"
     elif user_score > computer_score:  #in the case when both less than 21 but user score is higher than computer score
-        return "You win"
+        return "You win, dealer loses"
     else:
         return "You lose!!!"
 
