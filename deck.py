@@ -6,11 +6,10 @@ print("let's play a game of Blackjack!!")
 
 
 '''
-init_card() function for the 52 deck of cards
-initially assigned ace to 11 and it's going to count as 11 unil the user goes over 21
-all cards with J Q, K counts as 10, hence why the additional 3 10s
+init_cards() function creates the deck of cards containing 52 card objects.
+The ace is initially assigned to 11 and it's going to count as 11 unil the user goes over 21.
+The Jack, Queen, King cards counts as 10, hence why the additional 3 10s in the card list
 '''
-
 def init_cards():
     deck = []
     card = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
@@ -23,7 +22,9 @@ def init_cards():
 
 
 
-''' A function that takes cards and randomly selects one card'''
+''' random_cards() is a function that takes the deck of cards and randomly selects (draws) one card, 
+which is then removed from the deck.'''
+
 def random_cards(deck):
     random_card = random.choice(deck)
     random_card_num = int(random_card[1:]) #take the integer part of the randmoly chosen card
@@ -32,7 +33,10 @@ def random_cards(deck):
 
 
 
-'''A function that calculates the scores of randomly selected cards '''
+'''calculate_score() takes a list (of cards) as input and returns the score. 
+In this function, we also check for a blackjack and an ace. 
+If an ace (11) exists in the list of cards and the total score is over 21, then replace its value of 11 with 1.'''
+
 def calculate_score(card_list):
     # if 10 in card_list and 11 in card_list and len(card_list) == 2:
     #checking for a blackjack (ace +10)
@@ -47,12 +51,11 @@ def calculate_score(card_list):
 
 
 
-'''Function to compare the dealings'''
+'''Function to compare the scores of the player and computer to see who wins.'''
 def compare_scores(computer_score, user_score):
 
     if user_score > 21 and computer_score > 21:
         return "You went over, you lose"
-
     if user_score == computer_score:
         return "Draw, Push!"
     elif computer_score == 21:
