@@ -7,7 +7,7 @@ print("let's play a game of Blackjack!!")
 
 '''
 init_cards() function creates the deck of cards containing 52 card objects.
-The ace is initially assigned to 11 and it's going to count as 11 unil the user goes over 21.
+The ace is initially assigned to 11 and it's going to count as 11 until the score goes over 21.
 The Jack, Queen, King cards counts as 10, hence why the additional 3 10s in the card list
 '''
 def init_cards():
@@ -17,7 +17,7 @@ def init_cards():
     suits = ['S', 'H', 'C', 'D']
     for suit in suits:
         for num in card:
-            deck.append(suit+str(num))
+            deck.append(suit+str(num)) #creates a string, such as S2, S11, C2, etc
     return deck
 
 
