@@ -58,10 +58,10 @@ def compare_scores(computer_score, user_score):
         return "You went over, you lose"
     if user_score == computer_score:
         return "Draw, Push!"
-    elif computer_score == 21:
-        return "You lose, Dealer wins!"
     elif user_score == 21:
         return "Blackjack , you win!"
+    elif computer_score == 21:
+        return "You lose, Dealer wins!"
     elif user_score > 21:
         return "You bust, Dealer wins!"
     elif computer_score > 21:
